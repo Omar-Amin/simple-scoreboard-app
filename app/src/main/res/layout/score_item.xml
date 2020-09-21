@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/pointMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"
+        android:layout_marginLeft="20dp"
+        android:textColor="#8CFF4F59"
+        android:textSize="30sp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/scoreName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#57515A"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Game Name"
+        android:textSize="35sp"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_below="@id/scoreName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textColor="#D9D6D8"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/pointYou"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#8C90BC4B"
+        android:text="30"
+        android:textSize="30sp"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

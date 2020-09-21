@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddScore">
+
+    <TextView
+        android:id="@+id/addScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_score"
+        android:fontFamily="sans-serif"
+        android:textColor="#0099FF"
+        android:layout_marginTop="75dp"
+        android:textSize="55sp"
+        android:layout_marginStart="40dp" />
+
+    <ImageView
+        android:id="@+id/wave"
+        android:layout_marginTop="-50dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/addScoreText"
+        android:src="@drawable/ic_wave"
+        tools:ignore="ContentDescription" />
+
+    <RelativeLayout
+        android:layout_below="@id/wave"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-30dp"
+        android:background="#0099FF">
+
+        <EditText
+            android:id="@+id/gameName"
+            android:layout_width="250dp"
+            android:layout_marginTop="50dp"
+            android:layout_height="55dp"
+            android:textSize="20sp"
+            android:background="@drawable/form_rectangle"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/game"
+            android:textColor="#005F9E"
+            android:textColorHint="#990099FF"
+            android:cursorVisible="true"
+            android:paddingStart="10dp"
+            android:inputType="text"
+            android:backgroundTint="#fff"
+            tools:targetApi="lollipop"
+            tools:ignore="Autofill,RtlSymmetry" />
+
+        <RelativeLayout
+            android:id="@+id/playerHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/gameName"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:id="@+id/scoreOne"
+                android:layout_width="100dp"
+                android:background="@drawable/form_rectangle"
+                android:layout_marginTop="30dp"
+                android:layout_height="55dp"
+                android:textSize="20sp"
+                android:hint="@string/me"
+                android:textColor="#005F9E"
+                android:textColorHint="#990099FF"
+                android:cursorVisible="true"
+                android:inputType="numberDecimal"
+                android:backgroundTint="#fff"
+                tools:targetApi="lollipop"
+                android:paddingStart="10dp"
+                tools:ignore="Autofill,RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/scoreTwo"
+                android:layout_width="100dp"
+                android:background="@drawable/form_rectangle"
+                android:layout_height="55dp"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:hint="@string/you"
+                android:textColor="#005F9E"
+                android:paddingStart="10dp"
+                android:textColorHint="#990099FF"
+                android:cursorVisible="true"
+                android:layout_toEndOf="@id/scoreOne"
+                android:inputType="numberDecimal"
+                android:backgroundTint="#fff"
+                tools:targetApi="lollipop"
+                android:layout_marginStart="47dp"
+                tools:ignore="Autofill,RtlSymmetry" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chooseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp"
+            android:layout_below="@id/playerHolder">
+
+            <ImageButton
+                android:id="@+id/calenderBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/calender"
+                android:background="#00000000"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/calenderHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_date"
+                android:layout_toEndOf="@id/calenderBtn"
+                android:layout_centerVertical="true"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#fff"
+                android:layout_marginStart="10dp"
+                android:textSize="30sp"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/addNewScore"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chooseDate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:text="@string/add_score"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="#005F9E"
+            android:background="@drawable/add_score_button"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

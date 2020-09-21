@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Who Lost</string>
+    <string name="you">You</string>
+    <string name="add_score">Add score</string>
+    <string name="me">Me</string>
+    <string name="game">Game</string>
+    <string name="_200_pts">200 pts</string>
+    <string name="choose_date">Choose date</string>
+</resources>
